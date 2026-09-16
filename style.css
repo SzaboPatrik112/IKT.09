@@ -1,74 +1,92 @@
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
-header{
-    background-color: plum;
-    color: seagreen;
+header {
+  background-color: plum;
+  color: seagreen;
 }
-.tartalom{
-    display: grid;
-    grid-template-columns: 1fr 1fr;    
+.tartalom {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-top: 20px;
 }
-img{
-    width:500px
+img {
+  width: 500px;
+  border-radius: 20px;
 }
-.cikk1{
-    background-color: beige;
-    
-}
-.cikk1 h3{
-    background-color: green;
-    color: white;
-}
-.cikk2 h3{
-    background-color: blueviolet;
-    color: white
-}
-.cikk2{
-    background-color: beige;
+.cikk1 {
+  background-color: beige;
+  padding-bottom: 100px;
+  border-radius: 20px;
 
 }
+.cikk1 h3 {
+  background-color: green;
+  color: white;
+  padding: 5px;
+  margin: 50px 30px 0px 30px;
+  padding: 10px 20px 10px 20px;
+}
+#lila{
+    background-color: rgb(121, 41, 121);
+}
+main {
+    padding: 30px;
+    margin: auto;
+    max-width: 800px;
+}
+img{
+    max-width: 2000px;
+}
 nav.menu {
-    display: flex;
-    gap: 14px;
-    margin-bottom: 24px;
+  text-align: center;
 }
-a{
- background-color: darkgreen;
- text-decoration: none;
- color: white;
- text-align: center;
+a {
+  background-color: rgb(18, 82, 18);
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  border-radius: 10px;
 }
-h4{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-decoration: dotted;
+h4 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-decoration: dotted;
 }
 
 footer.lablec {
-    border-radius: 8px;
-    padding: 16px 18px;
+  border-radius: 8px;
+  padding: 16px 18px;
+}
+
+footer.lablec h3 {
+  margin: 0 0 10px;
+  font-weight: 600;
+  font-size: 12px;
+  text-decoration: underline;
+  display: inline-block;
+}
+
+footer.lablec p {
+  margin: 0;
+  font-size: 12px;
+}
+
+footer.lablec a {
+  color: #2f5233;
+  font-weight: 600;
+  text-decoration: underline dotted;
+}
+
+@media (max-width: 1000px) {
+    .cikk1{
+        grid-template-columns: 1fr;
+
+    }
   }
 
-  footer.lablec h3 {
-    margin: 0 0 10px;
-    font-weight: 600;
-    font-size: 12px;
-    text-decoration: underline;
-    display: inline-block;
-  }
-
-  footer.lablec p {
-    margin: 0;
-    font-size: 12px;
-  }
-
-  footer.lablec a {
-    color: #2f5233;
-    font-weight: 600;
-    text-decoration: underline dotted;
-  }
-   
-  /*Néhány megjegyzés a munka közben:
+/*Néhány megjegyzés a munka közben:
     - A Padding,Border,Margin témakörét újra át kell vennem
     - A reszponzivitás (ha lett volna rá időm) ment volna, de kicsit bizoonytalan vagyok
     - A kicsit nehezen láttam át az oldal mögötti logikát de idővel ez is jobban fog menni, még vissza kell szokni...
